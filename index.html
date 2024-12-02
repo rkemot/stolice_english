@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the capital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the capital</h1>
+    <div class="container">
+        <div class="history">
+            <h3>Answer log:</h3>
+            <ol></ol>
+            <ul></ul>
+        </div>
+        <div class="main">
+            <img alt="Aktualna flaga">
+            <p id="name"></p>
+            <div>
+                <input type="text" placeholder="Enter capital..." id="input">
+                <br>
+                <input type="button" value="Check" id="check" onclick="checkAnswer()">
+                <br>
+                <!-- <p id="p1">(nazwy stolic powinny być w j. angielskim)</p> -->
+            </div>
+        </div>
+        <div class="punktacja">
+            <h2>Points</h2>
+            <p id="right">correct: 0</p>
+            <p id="wrong">incorrect: 0 / 5</p>
+            <input type="button" value="Change theme" onclick="changeTheme()">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
